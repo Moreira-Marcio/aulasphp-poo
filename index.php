@@ -24,7 +24,18 @@ $clienteA -> email = "fulano@gmail.com"
 
 <h1>PHP com POO - Exemplo 01</h1>
 <hr>
+
+<h2>Acessando/lendo os dados do objeto</h2>
+<ul>
+    <li><b>Nome:</b><?=$clienteA->nome?></li>
+    <li><b>Idade:</b><?=$clienteA->idade?></li>
+    <li><b>E-mail</b><?=$clienteA->email?></li>
+</ul>
+
 <h2>teste de acesso aos recursos da classe atraves do objeto</h2>
+
+
+
 <pre><?=var_dump($clienteA, $clienteB)?></pre>
 
 
