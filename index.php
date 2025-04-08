@@ -4,6 +4,11 @@ require_once "src/Cliente.php";
 //criar  objeto/instância da classe
 $clienteA = new Cliente();
 $clienteB = new Cliente();
+
+//atribuindo valores para os atributos
+$clienteA -> nome = "fulano da silva";
+$clienteA -> idade = 30;
+$clienteA -> email = "fulano@gmail.com"
 ?>
 
 
