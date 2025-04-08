@@ -1,2 +1,1 @@
-# aulasphp-poo
- exemplos de programação orientada objeto usando o PHP
+# Exemplos de programação orientada objetos usando PHP
