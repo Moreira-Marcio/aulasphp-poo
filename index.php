@@ -8,7 +8,11 @@ $clienteB = new Cliente();
 //atribuindo valores para os atributos
 $clienteA -> nome = "fulano da silva";
 $clienteA -> idade = 30;
-$clienteA -> email = "fulano@gmail.com"
+$clienteA -> email = "fulano@gmail.com";
+
+$clienteB -> nome = "Zezinho";
+$clienteB -> idade = 25;
+$clienteB -> email = "zezinho@gmail.com"
 ?>
 
 
@@ -36,6 +40,17 @@ $clienteA -> email = "fulano@gmail.com"
    
     <li><b>Idade:</b> <?=$clienteA->idade?></li>
     <li><b>E-mail</b> <?=$clienteA->email?></li>
+</ul>
+
+<h3>Cliente B</h3>
+
+<div>
+    <?=$clienteB -> exibirDados()?>
+</div>
+<ul>
+   
+    <li><b>Idade:</b> <?=$clienteB->idade?></li>
+    <li><b>E-mail</b> <?=$clienteB->email?></li>
 </ul>
 
 <h2>teste de acesso aos recursos da classe atraves do objeto</h2>
