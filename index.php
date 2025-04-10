@@ -30,8 +30,18 @@ $clienteB ->setIdade (25);
 $clienteB -> setEmail( "zezinho@gmail.com")
 ?>
 <h2>Acessando/lendo os dados do objeto</h2>
+<ul>
+    <li><b>Nome:</b><?=$clienteA->getNome()?></li>
+    <li><b>Idade:</b><?=$clienteA->getIdade()?></li>
+    <li><b>E-mail:</b><?=$clienteA->getEmail()?></li>
 
+</ul>
+<ul>
+     <li><b>Nome:</b><?=$clienteB->getNome()?></li>
+    <li><b>Idade:</b><?=$clienteB->getIdade()?></li>
+    <li><b>E-mail:</b><?=$clienteB->getEmail()?></li>
 
+</ul>
 <h2>teste de acesso aos recursos da classe atraves do objeto</h2>
 
 
