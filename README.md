@@ -18,3 +18,10 @@
     - Criação dos objetos `$clienteA` e `$clienteB` a partir da classe usando `new Cliente()`
     - Atribuição de dados de forma direta aos atributos usando `$nomeObjeto->atributo = valor`
     - Chamada de métodos através do objeto usando `$nomeObjeto->metodo()`
+
+ ## 02_encapsulamento-para-visibilidadse
+
+ - Utilização de diferentes visibilidades (private e public)
+ - Controle da forma como os dados são acessados (getters) e modificados (setters)
+ - Com esa abordagem , podemos esconder detallhes de implementação de classes
+ - Podemos atribuir diferentes logicas de negocio (validaçoes, sanitizações etc)   
