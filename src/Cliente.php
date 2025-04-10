@@ -2,17 +2,23 @@
 class Cliente
 {
     //atributos (caracteristicas da classe)
-    public string $nome;
-    public int $idade;
-    public string $email;
+    private string $nome;
+    private int $idade;
+    private string $email;
+   // metodos setters
 
-    //metodos (comportament6os da classe)
-    public function exibirDados(): void 
-    {
-          echo "<b style='color:red'>Este é o cliente...$this->nome</b>";
-    }
-    public function verificarIdade(int $idade): bool
-    {
-        return true;
-    }
+   public function setNome(string $nome): void
+   {
+        $this->nome =$nome
+   }
+   
+   public function setIdade(int $idade): void 
+   {
+        $this->idade = $idade
+   }
+
+   public function setEmail(string $email): void 
+   {
+        $this->email = $email
+   }
 }
