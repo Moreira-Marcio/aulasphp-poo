@@ -31,3 +31,9 @@
  - Implementação do metodo construtor obrigando a inicialização do objeto com dados provenientes de parametros
  - chamada dos setters a partir do construtor
  - Mudança de visibilidade dos setters privados
+
+ ## 04_heranca-e-enumeracoes
+
+ - Superclasse e Subclasse
+ - Readequaçao de propriedades
+ - Ajustes nas chamadas de construtor, usando `parent` para acessar construtor da superclasse
