@@ -24,4 +24,6 @@
  - Utilização de diferentes visibilidades (private e public)
  - Controle da forma como os dados são acessados (getters) e modificados (setters)
  - Com esa abordagem , podemos esconder detallhes de implementação de classes
- - Podemos atribuir diferentes logicas de negocio (validaçoes, sanitizações etc)   
+ - Podemos atribuir diferentes logicas de negocio (validaçoes, sanitizações etc)  
+
+ ## 
