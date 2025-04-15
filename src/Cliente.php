@@ -2,8 +2,7 @@
 class Cliente
 {
      //atributos (caracteristicas da classe)
-     private string $nome;
-     private int $idade;
+     private string $nome;  
      private string $email;
      // metodos setters: responsavel por receber/atribuir dados para propriedades /atributos*/
 
