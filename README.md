@@ -25,3 +25,9 @@
  - Controle da forma como os dados são acessados (getters) e modificados (setters)
  - Com esa abordagem , podemos esconder detallhes de implementação de classes
  - Podemos atribuir diferentes logicas de negocio (validaçoes, sanitizações etc)   
+
+ ## 03_encapsulamento-e-metodo-construtor
+
+ - Implementação do metodo construtor obrigando a inicialização do objeto com dados provenientes de parametros
+ - chamada dos setters a partir do construtor
+ - Mudança de visibilidade dos setters privados
