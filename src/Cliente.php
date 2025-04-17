@@ -10,7 +10,7 @@ class Cliente
      //metodo construtor (sempre e executado automaticamente ao criar objeto)
      public function __construct(
           //definindo situacao inativo como valor padrao para o parametro situacao no construct
-          string $nome, string $email, Situacao $situacao = Situacao:: INATIVO
+          string $nome, string $email, Situacao $situacao = Situacao::INATIVO
           )
      {
           $this->setNome($nome);        
@@ -18,8 +18,9 @@ class Cliente
           $this->setSituacao($situacao);
      }
 
-
-     private function setSituacao(Situacao $situacao):void {
+     // visibilidade protegida :desta forma este metodo ´pode ser usado aqui em cliente(superclasse) e tambem as subclasses 
+     // o acesso externo (nonosso caso o index)continua sendo bloqueado
+     protected function setSituacao(Situacao $situacao):void {
           $this->situacao =  $situacao;
      }
 
