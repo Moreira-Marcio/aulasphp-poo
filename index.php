@@ -7,11 +7,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 04</title>
+    <title>Exemplo 05</title>
 </head>
 <body>
 
-<h1>PHP com POO - Exemplo 04</h1>
+<h1>PHP com POO - Exemplo 05</h1>
 <hr>
 <?php
 
@@ -26,8 +26,14 @@ $clientePJ= new PessoaJuridica("a", "a@g.com", "44554", 2019, "aaa");
 
 
 ?>
-<pre><?= var_dump($clienteCpf, $clientePJ)?></pre>
 
+ <h2>Relatorios</h2>
+
+ <h3>PF</h3>
+ <?=$clienteCpf->relatorio()?>
+
+ <h3>PJ</h3>
+ <?=$clientePJ->relatorio()?>
 
     
 </body>

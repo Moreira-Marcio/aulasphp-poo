@@ -18,6 +18,13 @@ class Cliente
           $this->setSituacao($situacao);
      }
 
+     public function relatorio():string{
+          return "<div>
+          <h4>{$this->getNome()}</h4>
+          <p><b> Contato: </b>{$this->getEmail()}</p>
+          </div>";
+     }
+
      // visibilidade protegida :desta forma este metodo ´pode ser usado aqui em cliente(superclasse) e tambem as subclasses 
      // o acesso externo (nonosso caso o index)continua sendo bloqueado
      protected function setSituacao(Situacao $situacao):void {
