@@ -14,8 +14,10 @@
 <h1>PHP com POO - Exemplo 04</h1>
 <hr>
 <?php
+require_once "src/Situacao.php"; //enum
 require_once "src/Cliente.php"; //superclasse
 require_once "src/PessoaFisica.php"; //subclasse
+
 
 $clienteCpf= new PessoaFisica("fulano","fulano@gmail.com",25,"123.123.123-23");
 

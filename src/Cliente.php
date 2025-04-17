@@ -4,13 +4,27 @@ class Cliente
      //atributos (caracteristicas da classe)
      private string $nome;  
      private string $email;
+     private Situacao $situacao;
      // metodos setters: responsavel por receber/atribuir dados para propriedades /atributos*/
 
      //metodo construtor (sempre e executado automaticamente ao criar objeto)
-     public function __construct(string $nome, string $email)
+     public function __construct(
+          //definindo situacao inativo como valor padrao para o parametro situacao no construct
+          string $nome, string $email, Situacao $situacao = Situacao:: INATIVO
+          )
      {
           $this->setNome($nome);        
           $this->setEmail($email);
+          $this->setSituacao($situacao);
+     }
+
+
+     private function setSituacao(Situacao $situacao):void {
+          $this->situacao =  $situacao;
+     }
+
+     public function getSituacao():Situacao{
+          return $this->situacao;
      }
 
 
