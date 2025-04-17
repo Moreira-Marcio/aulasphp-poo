@@ -18,6 +18,19 @@ class PessoaJuridica extends Cliente
         //como  metodo foi definido uma superclasse como protect, agora é possivel usa-lo para mudar a situação pj
         $this->setSituacao(Situacao::PENDENTE);
     }
+    
+    //metodo polimorfico,ou seja, ele subscreve o metodo originalmente criado na superclasse. Atenção os metodos devem ter a mesma assinatura (nome parametros e retorno)
+    //o parent:: pode ser usadi se quiser os dados a  masi da superclasse
+    public function relatorio(): string
+
+    {
+        return "<div>"  
+                 . parent::relatorio(). //opcional
+                "<p><b>Nome Fantasia?:</b> {$this->getNomeFantasia()}</p>
+                <p><b>CNPJ</b> {$this->getCnpj()}</p>
+                
+                </div>"
+    }
 
     private function setCnpj(string $cnpj): void {
         $this->cnpj = $cnpj;
