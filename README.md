@@ -40,3 +40,7 @@
  - Uso de enumeração para criar um tipo de dados com valores customizados
  - Alteração de visibilidade para protected em um metodo da superclasse, permitindo assim o acesso a partir da subclasse
  - Organização das pastas e arquivos em `src`
+
+ ## 5_polimorfismo
+ - Método de mesma assinatura (nome,parâmetros,retorno) mas com comportamentos diferentes
+ - [herança] indicação de classes abstratas e final
