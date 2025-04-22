@@ -1,5 +1,9 @@
 <?php
-class Cliente
+
+//classe abstrata: não pode ser instanciada.
+//com isso sera possivel criar objetos apenas a partir da subclasse
+
+abstract class Cliente
 {
      //atributos (caracteristicas da classe)
      private string $nome;  

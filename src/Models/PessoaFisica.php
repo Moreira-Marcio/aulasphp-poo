@@ -1,6 +1,6 @@
 <?php
 
-class PessoaFisica extends Cliente
+final class PessoaFisica extends Cliente
 {
     private int $idade;
     private string $cpf;
