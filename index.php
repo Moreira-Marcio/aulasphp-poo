@@ -30,12 +30,15 @@ $clientePJ= new PessoaJuridica("a", "a@g.com", "44554", 2019, "aaa");
 ?>
 
  <h2>Relatorios</h2>
+<!-- Acessando as opçoes do ENUM atraves do getSituacao()->name -->
 
  <h3>PF</h3>
  <?=$clienteCpf->relatorio()?>
+ <p><b>Situação:</b> <?=$clienteCpf->getSituacao()->name?></p>
 
  <h3>PJ</h3>
  <?=$clientePJ->relatorio()?>
+ <p><b>Situação:</b> <?=$clientePJ->getSituacao()->name?></p>
 
     
 </body>
