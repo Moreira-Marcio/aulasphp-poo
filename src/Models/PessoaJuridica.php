@@ -29,7 +29,7 @@ class PessoaJuridica extends Cliente
                 "<p><b>Nome Fantasia?:</b> {$this->getNomeFantasia()}</p>
                 <p><b>CNPJ</b> {$this->getCnpj()}</p>
                 
-                </div>"
+                </div>";
     }
 
     private function setCnpj(string $cnpj): void {
