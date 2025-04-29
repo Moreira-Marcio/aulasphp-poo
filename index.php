@@ -15,6 +15,8 @@
 <hr>
 <?php
 //sempre que trabalharmos com namespaces sera necessario especificar atraves do use quais classes/enums/funçoes serao usadas
+
+use MeuProjeto\Calculadora;
 use MeuProjeto\Models\PessoaFisica;
 use MeuProjeto\Models\PessoaJuridica;
 
@@ -25,9 +27,13 @@ require_once "vendor/autoload.php";
 $clienteCpf= new PessoaFisica("fulano","fulano@gmail.com",25,"123.123.123-23");
 $clientePJ= new PessoaJuridica("a", "a@g.com", "44554", 2019, "aaa");
 
-//codigo abaixo dara erro, pois o cliente é uma classe abstrata, portanto não podemos criar objeto a partir dela
-//$clienteGenerico = new Cliente ("fulano","fulano@gmail.com");
-//var_dump($clienteGenerico) 
+//acessando um metodo estatico(ou seja, sem passar por um objeto)
+
+$total = Calculadora::somar(10,5);
+echo $total;
+
+
+
 ?>
 
  <h2>Relatorios</h2>
