@@ -61,4 +61,16 @@
  
  use nomedospace/nomedapasta;
  $objeto = new nomedaclasse();
-``
+```
+
+## 7_autoload-de-classes-usando-composer
+
+- download e instalação do composer
+- criação e conficuração do `composer.json` para utilização do autoload de acordo com `psr-4`
+- execução do comando `composer dumpautoload` cia cli para gerar pasta `vendor` e o `autoload.php`
+- substituição de todos os `requires` individuais por um unico apontando para o autoload
+- exemplo de uso de clase abstrata (que não pode sewr instanciada) e metodo `static` (que pode ser acessado diretamente da classe,sem objeto)exemplo:
+
+```php
+Cauculadora::somar();
+```
