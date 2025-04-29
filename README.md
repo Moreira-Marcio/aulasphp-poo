@@ -46,4 +46,19 @@
  - [herança] indicação de classes abstratas e final
 
  ## 6_namespaces
+
+ - reorganização virtual/logica usando namespace (espaço nomeado)
+ - usando o "use" para simplificar (atalho) o acesso aos recursos do namespace
  
+ ** exemplo sem use **
+
+ ``` php
+ $objeto = new nomedospace/nomedapasta/nomedaclasse();
+ ```
+ ** exemplo com use 
+
+ ``` php
+ 
+ use nomedospace/nomedapasta;
+ $objeto = new nomedaclasse();
+``
