@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<h1>PHP com POO - Exemplo 06</h1>
+<h1>PHP com POO - Exemplo 07</h1>
 <hr>
 <?php
 //sempre que trabalharmos com namespaces sera necessario especificar atraves do use quais classes/enums/funçoes serao usadas
