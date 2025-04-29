@@ -1,5 +1,9 @@
 <?php 
 
+/* Classe Final: não permite herança, ou seja, não será possível
+ criar uma subclasse que extenda PessoaJuridica */
+ namespace MeuProjeto\Models;
+use MeuProjeto\Enums\Situacao;
 //classe final nao permite herança ,ou seja, nao seera possivel criar uma subclasse que extenda pessoa juridica
 final class PessoaJuridica extends Cliente 
 {

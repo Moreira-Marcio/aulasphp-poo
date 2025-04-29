@@ -14,6 +14,9 @@
 <h1>PHP com POO - Exemplo 06</h1>
 <hr>
 <?php
+//sempre que trabalharmos com namespaces sera necessario especificar atraves do use quais classes/enums/funçoes serao usadas
+use MeuProjeto\Models\PessoaFisica;
+use MeuProjeto\Models\PessoaJuridica;
 
 require_once "src/Enums/Situacao.php"; //enum
 require_once "src/Models/Cliente.php"; //superclasse

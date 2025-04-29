@@ -1,5 +1,15 @@
 <?php
 
+ /* Classe abstrata: não pode ser instanciada.
+ Com isso, será possível criar objetos apenas a partir das subclasses. */
+ namespace MeuProjeto\Models;
+ 
+ // Usamos o 'use' para indicar a utilização de outras classes/enums que temos
+ use MeuProjeto\Enums\Situacao;
+ 
+ // Usamos o 'use' também para indicar a utilização de classes internas do PHP
+ use InvalidArgumentException;
+
 //classe abstrata: não pode ser instanciada.
 //com isso sera possivel criar objetos apenas a partir da subclasse
 
